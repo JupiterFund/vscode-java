@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+echo $@
 
 # this script is called by Dockerfile to build the Docker image
 JAVA_VERSION=$1
