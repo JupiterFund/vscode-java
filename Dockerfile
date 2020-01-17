@@ -24,4 +24,6 @@ RUN chmod +x /install_tools.sh
 USER coder
 
 # Install required tools for java development.
-RUN /install_tools.sh "$JAVA_VERSION" $GRADLE_VERSION $MAVEN_VERSION
+# TODO: use ARG instead of fixed version
+# ARG does not work with value including dash
+RUN /install_tools.sh 8.0.232-open $GRADLE_VERSION $MAVEN_VERSION
