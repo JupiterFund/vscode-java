@@ -1,7 +1,7 @@
 # Copyright (c) HyperCloud Development Team.
 # Distributed under the terms of the Modified BSD License.
 
-ARG BASE_CONTAINER=codercom/code-server:2.1704-vsc1.41.1
+ARG BASE_CONTAINER=codercom/code-server:2.1698
 ARG JAVA_VERSION=8.0.232-open
 ARG GRADLE_VERSION=6.1
 ARG MAVEN_VERSION=3.6.3
