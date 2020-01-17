@@ -2,7 +2,7 @@
 # Distributed under the terms of the Modified BSD License.
 
 ARG BASE_CONTAINER=codercom/code-server:2.1698
-ARG JAVA_VERSION="8.0.232-open"
+ARG JAVA_VERSION=8.0.232-open
 ARG GRADLE_VERSION=6.1
 ARG MAVEN_VERSION=3.6.3
 
@@ -24,4 +24,4 @@ RUN chmod +x /install_tools.sh
 USER coder
 
 # Install required tools for java development.
-RUN /install_tools.sh $JAVA_VERSION $GRADLE_VERSION $MAVEN_VERSION
+RUN /install_tools.sh "$JAVA_VERSION" $GRADLE_VERSION $MAVEN_VERSION
